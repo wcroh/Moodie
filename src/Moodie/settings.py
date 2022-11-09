@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ["http://localhost", "http://0.0.0.0",
-                        "http://0.0.0.0:80", "http://13.209.143.153"]
+                        "http://0.0.0.0:80", "http://13.209.143.153", "http://moodie.today"]
 # Application definition
 
 INSTALLED_APPS = [
