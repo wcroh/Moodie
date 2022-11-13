@@ -1,2 +1,4 @@
-src/Moodie/__pycache__
+src/Moodie/__pycache__/
+src/UploadImage/migrations/__pycache__/
+src/media/images/
 venv

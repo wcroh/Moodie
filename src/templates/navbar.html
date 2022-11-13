@@ -1,6 +1,12 @@
-<nav class="navbar navbar-expand-lg bg-light">
+{%load static%}
+<nav
+  class="navbar navbar-expand-lg navbar-dark"
+  style="background-color: #5210ce"
+>
   <div class="container-fluid">
-    <a class="navbar-brand" href="{%url 'home' %}">INiT</a>
+    <a href="{%url 'home' %}" class="navbar-left">
+      <img src="{% static 'Moodie_Logo.png' %}" width="50" height="50" alt="" />
+    </a>
     <button
       class="navbar-toggler"
       type="button"
@@ -13,31 +19,27 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class="collapse navbar-collapse justify-content-between">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="{%url 'home' %}"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{%url 'upload'%}">Upload</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-            <li class="nav-item ml-auto">
-                <a class="nav-link" href="#">Logout</a>
-            </li>
-            <li class="nav-item navbar-right">
-                <a class="nav-link" href="#">Register</a>
-            </li>
-            <li class="nav-item navbar-right">
-                <a class="nav-link" href="#">Login</a>
-            </li>
-        </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{%url 'home' %}"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'upload'%}">Upload</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item ml-auto">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+        <li class="nav-item navbar-right">
+          <a class="nav-link" href="#">Register</a>
+        </li>
+        <li class="nav-item navbar-right">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
