@@ -15,6 +15,7 @@ services:
         build: .
         container_name: dg01
         command: bash -c "
+            python3 manage.py collectstatic --no-input&&
             python3 manage.py makemigrations && 
             python3 manage.py migrate && 
             gunicorn Moodie.wsgi:application -b 0:80"
