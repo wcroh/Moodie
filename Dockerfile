@@ -33,7 +33,7 @@ RUN mkdir /config
 ADD /config/requirements.txt /config/
 
 # requirements.txt에 있는 파이썬 패키지 설치
-RUN pip3 install -r /config/requirements.txt
+RUN pip3 install --no-cache-dir -r /config/requirements.txt
 
 ### 작업 디렉토리 ###
 # Django 소스코드가 들어갈 폴더 생성
