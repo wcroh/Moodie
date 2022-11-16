@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=j&o2*wx23ic1pjc1++zjh@71)=2z-3x6=3cnmmqly=wb-&c30'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ["http://localhost", "http://0.0.0.0",
@@ -121,10 +121,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # 프로젝트 전반적으로 사용되는 static 경로 설정
 STATICFILES_DIRS = [
-    #os.path.join(BASE_DIR, 'static/')
+    os.path.join(BASE_DIR, 'static'),
 ]
 # python manage.py collectstatic 할 때 어디로 모을지 설정
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

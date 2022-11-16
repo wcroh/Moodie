@@ -4,8 +4,13 @@
   style="background-color: #5210ce"
 >
   <div class="container-fluid">
-    <a href="{%url 'home' %}" class="navbar-left">
-      <img src="{% static 'Moodie_Logo.png' %}" width="50" height="50" alt="" />
+    <a href="{% url 'home' %}" class="navbar-left">
+      <img
+        src="{% static 'Moodie_Logo.png' %}"
+        width="50"
+        height="50"
+        alt="Noimage"
+      />
     </a>
     <button
       class="navbar-toggler"
